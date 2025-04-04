@@ -43,14 +43,14 @@ The project follows a structured pipeline to process the data and build a predic
      rows that had more than two values missing or null were dropped to prevent outliers.
      rows after cleaning were reduced to **608 rows** and **9 columns**
    - Encoding categorical variables for machine learning compatibility.
+   - Creating new features from existing ones (e.g., family size from SibSp and Parch).
+   - Scaling numerical features if necessary also applying encoding columns.
 
 2. **Exploratory Data Analysis (EDA):**
-   - Analyzing distributions of key features like Age, Fare, and Survival.
-   - Visualizing survival rates by gender, class, and other factors.
-
-3. **Feature Engineering:**
-   - Creating new features from existing ones (e.g., family size from SibSp and Parch).
-   - Scaling numerical features if necessary.
+   - **Loading and inspecting data:** Checking missing values, feature distributions, and basic statistics.
+   - **Survival rate analysis:** Examining survival percentages by passenger class, gender, and other features.
+   - **Feature correlations:** Using heatmaps to visualize relationships between numerical variables.
+   - **Visualization of distributions:** Creating bar plots, histograms, and box plots for key features such as Age, Fare, and Pclass.
 
 4. **Model Training:**
    - Training machine learning models (e.g., Logistic Regression, Random Forest) to predict survival.
@@ -65,7 +65,7 @@ To execute the full pipeline, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone <repository_url>
+   git clone https://github.com/Em-White25/Grp2-Wk1-Project.git
    cd titanic-survival-analysis
    ```
 2. Install dependencies:
